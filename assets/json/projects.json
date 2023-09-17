@@ -1,0 +1,42 @@
+[
+    {
+        "image": "kemnaker.png",
+        "position": "Frontend Web Developer",
+        "company": "PT. Pandawa Teknologi Nusantara",
+        "about": "Government Ministry Application",
+        "employmentType": "Full-time",
+        "url": "https://www.kemnaker.go.id",
+        "startYear": "2023",
+        "endYear": "Present"
+    },
+    {
+        "image": "samsung.png",
+        "position": "Software Engineer",
+        "company": "Samsung R&D Institute Indonesia",
+        "about": "Analysis Application",
+        "employmentType": "Internship",
+        "url": "https://www.satumarket.com",
+        "startYear": "2022",
+        "endYear": "2023"
+    },
+    {
+        "image": "kemnaker.png",
+        "position": "Frontend Web Developer",
+        "company": "PT. Ammana Fintek Syariah",
+        "about": "Government Ministry Application",
+        "employmentType": "Freelance",
+        "url": "https://www.kemnaker.go.id",
+        "startYear": "2021",
+        "endYear": "2022"
+    },
+    {
+        "image": "satumarket.png",
+        "position": "Full Stack Developer",
+        "company": "PT. Satu Aplikasi Untuk Semua",
+        "about": "Ecommerce Web Application",
+        "employmentType": "Freelance",
+        "url": "https://www.satumarket.com",
+        "startYear": "2018",
+        "endYear": "2019"
+    }
+]

@@ -1,0 +1,135 @@
+@import "color.less";
+@import "media.less";
+
+/* Sidebar */
+
+nav {
+    //background-color: #ECECEC;
+    //background-color: #098F83;
+    background-color: @gray-extra-light-color;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    transition: .4s width;
+    width: calc(40px + 28.13px);
+
+    @media @lg {
+        height: auto;
+        width: 100%;
+        transition: none;
+        padding: 10px 30px;
+        position: fixed;
+        top: 0;
+    }
+
+    @media @lg-above {
+        &:hover {
+            width: 240px;
+
+            @media @xl {
+                width: 200px;
+            }
+        }
+    }
+
+    @media @md {
+        padding-left: 20px;
+        padding-right: 8px;
+    }
+
+    .content-container {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+
+        @media @lg {
+            position: initial;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            padding-left: 20px;
+            //background-color: rgb(220, 220, 220);
+            //border-bottom: 1px solid @gray-color;
+            background-color: @gray-light-color;
+
+            @media @lg {
+                background-color: transparent;
+                padding: 0;
+                padding-left: 12px;
+            }
+
+            @media @md {
+                padding-left: 0;
+            }
+
+            img {
+                width: 28.13px;
+                margin-right: 20px;
+
+                @media @lg {
+                    margin-right: 10px;
+                }
+            }
+
+            span {
+                font-weight: bold;
+                color: @primary-dark-color;
+            }
+        }
+
+        .menu {
+            margin-top: 50px;
+            padding: 0 10px;
+
+            @media @lg {
+                flex: 1;
+                margin-top: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            > li > a {
+                color: @gray-color;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border-radius: 8px;
+                padding: 10px 12px;
+
+                //@media @lg{
+                //    width: auto;
+                //}
+
+                > i {
+                    font-size: 25px;
+                    margin-right: 18px;
+
+                    @media @lg {
+                        display: none;
+                    }
+                }
+
+                > span {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                &.active {
+                    color: @blue-color;
+                }
+
+                &:hover {
+                    background-color: @blue-extra-light-color;
+                    color: @blue-color;
+                }
+            }
+        }
+    }
+}

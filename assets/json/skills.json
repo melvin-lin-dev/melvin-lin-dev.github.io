@@ -1,0 +1,30 @@
+{
+    "languages": [
+        "HTML",
+        "CSS/LESS/SASS",
+        "JavaScript/jQuery",
+        "PHP",
+        "TypeScript"
+    ],
+    "tools": [
+        "WebStorm",
+        "PhpStorm",
+        "GitHub",
+        "Figma",
+        "Adobe Photoshop"
+    ],
+    "databaseLanguages": [
+        "MySQL",
+        "SQL",
+        "PostgreSQL"
+    ],
+    "frameworks": [
+        "Angular",
+        "Vue",
+        "React",
+        "Laravel",
+        "CodeIgniter",
+        "Bootstrap",
+        "Tailwind CSS"
+    ]
+}

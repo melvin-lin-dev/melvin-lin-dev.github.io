@@ -1,0 +1,79 @@
+@import "media.less";
+
+* {
+    content: '';
+    box-sizing: border-box;
+    font-family: "Segoe UI", serif;
+}
+
+body {
+    margin: 0;
+    color: #374151;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    width: 1000px;
+    padding: 0 20px;
+
+    @media @xl {
+        width: 860px;
+    }
+
+    @media @lg {
+        width: 690px;
+    }
+
+    @media @md {
+        width: 100%;
+    }
+}
+
+/* Body */
+
+.body-container {
+    display: flex;
+
+    @media @lg {
+        display: initial;
+
+        > div:first-child {
+            height: 67px;
+        }
+    }
+
+    > div:last-child {
+        flex: 1;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, .title, .name {
+    font-family: Candara, serif;
+
+    * {
+        font-family: Candara, serif;
+    }
+}
