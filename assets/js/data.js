@@ -36,11 +36,14 @@ function getProjects() {
                                             <span>Position</span>
                                             <span>${project.position}</span>
                                         </div>
-                                        <div class="button-container">
-                                            <a href="${project.url}" target="_blank">
-                                                Visit <i class="fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
+                                        ${
+                                            project.url ?
+                                                `<div class="button-container">
+                                                    <a href="${project.url}" target="_blank">
+                                                        Visit <i class="fas fa-chevron-right"></i>
+                                                    </a>
+                                                </div>` : ''
+                                        }
                                     </div>
                                 </div>
                             </div>
