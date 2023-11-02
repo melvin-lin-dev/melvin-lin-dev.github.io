@@ -25,7 +25,7 @@ function getProjects() {
                         <div class="content-container">
                             <img src="./assets/images/projects/${project.image}" alt="Project Image">
                             <div class="content">
-                                <div class="name">${project.company} <span>(${project.startYear} - ${project.endYear})</span></div>
+                                <div class="name">${project.company} <span>(${project.startYear === project.endYear ? project.startYear + ' | ' + project.duration : project.startYear + ' - ' + project.endYear})</span></div>
                                 <div class="description">
                                     <div class="about">
                                         <span>About</span>
