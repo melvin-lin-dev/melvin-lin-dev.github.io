@@ -1,3 +1,10 @@
+function loadData(){
+    getSkills();
+    getProjects();
+    getEducations();
+    getCertifications();
+}
+
 function getSkills() {
     fetch("./assets/json/skills.json")
         .then(res => res.json())

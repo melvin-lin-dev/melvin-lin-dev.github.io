@@ -1,6 +1,4 @@
 window.onload = () => {
-    getSkills();
-    getProjects();
-    getEducations();
-    getCertifications();
+    loadData();
+    loadLoader();
 }
