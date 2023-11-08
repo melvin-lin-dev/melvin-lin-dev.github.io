@@ -1,0 +1,19 @@
+{
+    "games": {
+        "class": "fa-solid fa-gamepad",
+        "data": [
+            {
+                "name": "Pipe",
+                "link": "./games/pipe"
+            }
+        ]
+    },
+    "animations": {
+        "class": "fa-solid fa-person-running",
+        "data": []
+    },
+    "applications": {
+        "class": "fa-brands fa-uncharted",
+        "data": []
+    }
+}
