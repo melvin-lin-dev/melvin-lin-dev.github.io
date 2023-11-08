@@ -5,6 +5,10 @@
             {
                 "name": "Pipe",
                 "link": "./games/pipe"
+            },
+            {
+                "name": "Minesweeper",
+                "link": "./games/minesweeper"
             }
         ]
     },

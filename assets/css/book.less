@@ -291,7 +291,7 @@ body{
 							}
 
 							&:not(.clicked):hover{
-								animation: infinite 1.4s contentAnimation ease-in-out;
+								animation: infinite 1s contentAnimation ease-in-out;
 							}
 
 							&:before, &:after{
@@ -317,6 +317,10 @@ body{
 								border-color: #ccc;
 								transform: scale(1.095, 1.4);
 								opacity: 0;
+							}
+
+							&:not(:first-child){
+								margin-top: 12px;
 							}
 						}
 					}
@@ -438,6 +442,7 @@ body{
 				
 				&.back-cover{
 					font-size: 35px;
+					font-weight: bold;
 				}
 			}
 

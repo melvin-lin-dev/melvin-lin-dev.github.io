@@ -69,8 +69,10 @@ function goToPage(page){
 }
 
 function navigateTo(el, link){
-	$(el).addClass('clicked');
-	setTimeout(() => {
-		location.href = link;
-	}, 650);
+	if(!$(".book .content-container .content.clicked").hasClass("clicked")){
+		$(el).addClass('clicked');
+		setTimeout(() => {
+			location.href = link;
+		}, 650);
+	}
 }
