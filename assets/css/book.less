@@ -256,6 +256,9 @@ body{
 				.content-container{
 					padding: 20px 40px;
 					position: relative;
+					display: flex;
+					flex-direction: column;
+					height: 100%;
 
 					.title{
 						font-size: 50px;
@@ -264,7 +267,24 @@ body{
 					}
 
 					.list{
-						margin-top: 15px;
+						margin: 0 -26px;
+						padding: 0 26px;
+						padding-top: 15px;
+						flex: 1;
+						overflow-y: auto;
+
+						&::-webkit-scrollbar {
+							width: 6px;
+						}
+						
+						&::-webkit-scrollbar-thumb {
+							background-color: fade(@primary-dark-color, 50%);
+							border-radius: 100px;
+						}
+						
+						&::-webkit-scrollbar-thumb:hover {
+							background-color: @primary-dark-color;
+						}
 
 						.content{
 							color: black;
@@ -280,6 +300,7 @@ body{
 							position: relative;
 							width: 100%;
 							font-size: 18px;
+							text-align: left;
 
 							@keyframes contentAnimation{
 								0%,100%{
@@ -321,6 +342,12 @@ body{
 
 							&:not(:first-child){
 								margin-top: 12px;
+							}
+
+							> div > div:last-child:not(:first-child){
+								font-size: 12px;
+								color: @gray-color;
+								margin-top: 2px;
 							}
 						}
 					}

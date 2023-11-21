@@ -9,6 +9,47 @@
             {
                 "name": "Minesweeper",
                 "link": "./games/minesweeper"
+            },
+            {
+                "name": "2048",
+                "link": "./games/2048"
+            },
+            {
+                "name": "Breaking Brick",
+                "link": "./games/breaking-brick"
+            },
+            {
+                "name": "Chess",
+                "link": "./games/chess"
+            },
+            {
+                "name": "Jewel Crush",
+                "link": "./games/jewel-crush"
+            },
+            {
+                "name": "Othello",
+                "link": "./games/othello"
+            },
+            {
+                "name": "Shooter",
+                "link": "./games/shooter"
+            },
+            {
+                "name": "Snake",
+                "link": "./games/snake"
+            },
+            {
+                "name": "Star Battle",
+                "link": "./games/star-battle",
+                "desc": "Best Student Award - Jawara Game Indonesia"
+            },
+            {
+                "name": "Tetris",
+                "link": "./games/tetris"
+            },
+            {
+                "name": "Zuma",
+                "link": "./games/zuma"
             }
         ]
     },

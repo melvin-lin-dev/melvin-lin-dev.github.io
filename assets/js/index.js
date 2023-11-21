@@ -70,10 +70,15 @@ function loadApp() {
               
                 let html = '';
                 if(res[key].data.length){
+                  res[key].data.sort((a, b) => a.name.localeCompare(b.name));
+
                   res[key].data.forEach(data => {
                     html += `
                       <button class="content" onclick="navigateTo(this, '${data.link}')">
-                        <div>${data.name}</div>
+                        <div>
+                          <div>${data.name}</div>
+                          ${data.desc ? `<div>${data.desc}</div>` : ""}
+                        </div>
                         <i class="fa-solid fa-chevron-right"></i>
                       </button>
                     `;
