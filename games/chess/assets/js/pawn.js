@@ -36,13 +36,6 @@ class Pawn{
 		this.s = chessPiecesImg.width / 6;
 		this.x = x;
 		this.y = y;
-		//
-		// if(color === 0 && typeNumber === 1) {
-		// 	typeNumber = 0;
-		// }else if(color === 0 && typeNumber === 0){
-		// 	typeNumber = 1;
-		// }
-		//
 
 		this.color = color ? 'white' : 'black';
 
