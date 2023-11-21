@@ -1,5 +1,5 @@
 let chessPiecesImg = new Image();
-chessPiecesImg.src = 'assets/image/chessPieces.png';
+chessPiecesImg.src = 'assets/image/chess-pieces.png';
 
 let horizontalDirection = [[1,0],[-1,0]];
 let verticalDirection = [[0,1],[0,-1]];
