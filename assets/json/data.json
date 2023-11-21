@@ -55,7 +55,28 @@
     },
     "animations": {
         "class": "fa-solid fa-person-running",
-        "data": []
+        "data": [
+            {
+                "name": "Cards Corner Menu",
+                "link": "./games/cards-corner-menu"
+            },
+            {
+                "name": "Cards V2",
+                "link": "./games/cards-v2"
+            },
+            {
+                "name": "Kinetic Magnetic Cursor",
+                "link": "./games/kinetic-magnetic-cursor"
+            },
+            {
+                "name": "Rain",
+                "link": "./games/rain"
+            },
+            {
+                "name": "Starfield",
+                "link": "./games/starfield"
+            }
+        ]
     },
     "applications": {
         "class": "fa-brands fa-uncharted",

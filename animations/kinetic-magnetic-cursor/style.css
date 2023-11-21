@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 65%;
+}
+
+.container > div{
+    margin: 15px;
+    height: 33px;
+    width: 33px;
+    background-color: orange;
+    /*transform: rotate(30deg);*/
+}
