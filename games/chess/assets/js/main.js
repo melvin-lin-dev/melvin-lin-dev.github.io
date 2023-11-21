@@ -21,15 +21,17 @@ window.onload = () => {
 };
 
 function start(){
-	generateBoard();
-	generatePawnSelectList();
+	chessPiecesImg.onload = () => {
+		generateBoard();
+		generatePawnSelectList();
 
-	refreshBoard();
-	drawPawn();
+		refreshBoard();
+		drawPawn();
 
-	checkKingMoves(true);
+		checkKingMoves(true);
 
-	update();
+		update();
+	}
 }
 
 function update(){

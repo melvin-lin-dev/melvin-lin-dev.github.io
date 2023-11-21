@@ -64,8 +64,6 @@ class Pawn{
 	}
 
 	draw(){
-		chessPiecesImg.onload = () => {
-			ctx.drawImage(chessPiecesImg, this.sx, this.sy, this.s, this.s, this.x + ((tileSize - this.s) / 2), this.y + ((tileSize - this.s) / 2), this.s, this.s);
-		}
+		ctx.drawImage(chessPiecesImg, this.sx, this.sy, this.s, this.s, this.x + ((tileSize - this.s) / 2), this.y + ((tileSize - this.s) / 2), this.s, this.s);
 	}
 }
