@@ -50,6 +50,10 @@
             {
                 "name": "Zuma",
                 "link": "./games/zuma"
+            },
+            {
+                "name": "Circle Head",
+                "link": "./games/circle-head"
             }
         ]
     },
@@ -58,23 +62,23 @@
         "data": [
             {
                 "name": "Cards Corner Menu",
-                "link": "./games/cards-corner-menu"
+                "link": "./animations/cards-corner-menu"
             },
             {
                 "name": "Cards V2",
-                "link": "./games/cards-v2"
+                "link": "./animations/cards-v2"
             },
             {
                 "name": "Kinetic Magnetic Cursor",
-                "link": "./games/kinetic-magnetic-cursor"
+                "link": "./animations/kinetic-magnetic-cursor"
             },
             {
                 "name": "Rain",
-                "link": "./games/rain"
+                "link": "./animations/rain"
             },
             {
                 "name": "Starfield",
-                "link": "./games/starfield"
+                "link": "./animations/starfield"
             }
         ]
     },
