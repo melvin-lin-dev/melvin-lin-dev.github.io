@@ -1,0 +1,314 @@
+header{
+	height: 100vh;
+	background-image: url('image/back.jpg');
+}
+
+header > div{
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+header img{
+	height: 50px;
+}
+
+header ul{
+	width: 100%;
+	color: white;
+	text-align: right;
+}
+
+header li{
+	display: inline-block;
+	padding: 22px 5%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+header nav .active{
+	border-bottom: 2px solid rgb(0,100,240);
+}
+
+.caret{
+	display: inline-block;
+	transform: rotate(180deg) scale(1.5,1);
+	margin-left: 3px;
+}
+
+header .fa{
+	display: none;
+}
+
+section > div{
+	padding: 80px 0;
+	text-align: center;
+}
+
+section .line{
+	border: 1px solid rgb(0,100,255);
+	margin: auto;
+	width: 80px;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+section h1{
+	letter-spacing: 1.5px;
+	font-size: 35px;
+	color: rgb(30,30,30);
+}
+
+.body1{
+	margin-top: -200px;
+}
+
+.body1 .content{
+	background-color: white;
+	box-shadow: 0 4px 10px #ccc;
+	border-radius: 40px;
+	width: 65%;
+	margin: auto;
+	padding: 50px 5%;
+}
+
+.body1 p{
+	text-align: left;
+}
+
+.body1 input{
+	padding: 10px 4%;
+	border: none;
+	border-bottom: 2px solid rgb(0,100,255);
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.body2 h3{
+	color: rgb(0,100,255);
+	margin-top: 15px;
+	margin-bottom: 23px;
+}
+
+.body4 img{
+	width: 90%;
+}
+
+.body4 h3{
+	color: rgb(0,100,205);
+	margin-top: 10px;
+	margin-bottom: 23px;
+}
+
+.body4{
+	background-color: rgba(0,0,0,0.035);
+}
+
+.btn{
+	border-radius: 10px;
+	padding: 8px 8%;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-transparent{
+	color: rgb(0,100,205);
+	border: 1px solid rgb(0,100,205);
+	background-color: transparent;
+}
+
+.btn-transparent:hover{
+	background-color: rgb(0,100,205);
+	color: white;
+}
+
+.body5 .image{
+	height: 200px;
+}
+
+.body5 .row:nth-of-type(2) > div:nth-child(1) .image{background-image: url('image/o1.jpg')}
+.body5 .row:nth-of-type(2) > div:nth-child(2) .image{background-image: url('image/o2.jpg')}
+.body5 .row:nth-of-type(2) > div:nth-child(3) .image{background-image: url('image/o3.jpg')}
+
+.body5 .row:nth-of-type(2) > div:nth-child(4) .image{background-image: url('image/o4.jpg')}
+.body5 .row:nth-of-type(2) > div:nth-child(5) .image{background-image: url('image/o5.jpg')}
+.body5 .row:nth-of-type(2) > div:nth-child(6) .image{background-image: url('image/o6.jpg')}
+
+.body5 .row .row > div{
+	margin-top: 30px;
+}
+
+.body5 p{
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.body5 button{
+	display: block;
+	margin-left: auto;
+}
+
+.body6{
+	background-image: url('image/back.jpg');
+	padding: 0;
+}
+
+.body6 h1{
+	color: white;
+}
+
+.body6 > div{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	padding: 80px 0;
+}
+
+.body6 p{
+	text-align: left;
+}
+
+.body6 .v-line{
+	height: 70px;
+	width: 2px;
+	background-color: rgb(0,100,220);
+}
+
+.body6 .image{
+	width: 100%;
+	padding-top: 100%;
+	border-radius: 100%;
+}
+
+.body6 .v-align{
+	justify-content: center;
+	flex-direction: column;
+}
+
+.body6 p{
+	width: 100%;
+	line-height: 1.7;
+}
+.body6 .content .row{
+	padding-top: 50px;
+}
+
+.body6 .content > div:nth-child(1) .image{background-image: url('image/b.jpg')}
+.body6 .content > div:nth-child(2) .image{background-image: url('image/s.jpg')}
+
+.body7 .row .row > div{
+	margin: 0 auto;
+}
+
+.body7 li{
+	margin-top: 20px;
+}
+
+.body7 .line{
+	border: 1px solid white;
+}
+
+.body7 h1{
+	color: white;
+}
+
+.body7{
+	background-color: rgb(0,100,240);
+	color: white;
+}
+
+.body8 img{
+	width: 90%;
+}
+
+.btn-fill{
+	background-color: rgb(0,100,250);
+	color: white;
+}
+
+.body9{
+	background-color: rgb(0,100,180);
+	padding: 50px 0;
+}
+
+.body9 button{
+	padding: 15px 4%;
+}
+
+.body9 h2{
+	display: inline-block;
+	margin-right: 30px;
+	color: white;
+}
+
+footer{
+	color: white;
+}
+
+.footer1{
+	background-color: rgba(0,0,0,0.8);
+	padding: 80px 0;
+}
+
+.footer1 img{
+	width: 100%;
+}
+
+.footer1 .logo{
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.footer1 p{
+	line-height: 1.6;
+}
+
+.footer1 i{
+	text-align: left;
+}
+
+.footer1 h2{
+	margin-bottom: 20px;
+}
+
+.footer1 li{
+	margin: 10px 0;
+}
+
+.footer1 .info > div{
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.footer2{
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+
+
+.sider{
+	background-color: rgb(0,100,240);
+	color: white;
+	opacity: 0;
+}
+
+.sider ul{
+	text-align: left;
+}
+
+.sider li{
+	padding: 25px 4%;
+	display: block;
+}
+
+.sider li:hover{
+	background-color: white;
+	color: rgb(0,100,240);
+}
+
+.sider .active{
+	background-color: white;
+	color: rgb(0,100,240);
+}

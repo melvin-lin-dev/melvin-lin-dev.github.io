@@ -1,0 +1,67 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+	transition: 0.4s all;
+}
+
+*{
+	background-position: center;
+	background-size: cover;
+	font-family: montserrat-bold;
+}
+
+html,body, .container{
+	margin: auto;
+}
+
+.container{
+	width: 1130px;
+	padding: 0 15px;
+}
+
+.row{
+	margin: 0 -15px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.row > div{
+	padding: 0 15px;
+	position: relative;
+	min-height: 1px;
+}
+
+.col-lg-1{flex: 1 1 8.333%; max-width: 8.333%;}
+.col-lg-2{flex: 1 1 16.667%; max-width: 16.667%;}
+.col-lg-3{flex: 1 1 25%; max-width: 25%;}
+.col-lg-4{flex: 1 1 33.333%; max-width: 33.333%;}
+.col-lg-5{flex: 1 1 41.667%; max-width: 41.667%;}
+.col-lg-6{flex: 1 1 50%; max-width: 50%;}
+.col-lg-7{flex: 1 1 58.333%; max-width: 58.333%;}
+.col-lg-8{flex: 1 1 66.667%; max-width: 66.667%;}
+.col-lg-9{flex: 1 1 75%; max-width: 75%;}
+.col-lg-10{flex: 1 1 83.333%; max-width: 83.333%;}
+.col-lg-11{flex: 1 1 91.667%; max-width: 91.667%;}
+.col-lg-12{flex: 1 1 100%; max-width: 100%;}
+
+a{
+	text-decoration: none;
+}
+
+ul, p{
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+@font-face{
+	font-family: montserrat-reg;
+	src: url('font/Montserrat-Regular.ttf');
+}
+
+@font-face{
+	font-family: montserrat-bold;
+	src: url('font/Montserrat-bold.ttf');
+}

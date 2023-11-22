@@ -126,6 +126,16 @@
                 "name": "Wedding",
                 "link": "./designs/wedding",
                 "desc": "Desktop Only · Wedding Theme"
+            },
+            {
+                "name": "Bridge",
+                "link": "./designs/bridge",
+                "desc": "Desktop Only"
+            },
+            {
+                "name": "Bus Booking",
+                "link": "./designs/book-bus",
+                "desc": "Responsive · Bus Theme"
             }
         ]
     }

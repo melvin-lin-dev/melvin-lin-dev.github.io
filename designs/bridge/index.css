@@ -1,0 +1,441 @@
+nav ul{
+	list-style: none;
+	width: 100%;
+	text-align: right;
+}
+
+nav li{
+	display: inline-block;
+	padding: 16px 2.3%;
+	font-weight: bolder;
+}
+
+nav li a{
+	color: white;
+}
+
+header{
+	height: 100vh;
+	background-image: url('image/bridge_back.jpg');
+	color: white;
+	background-position: center 0;
+	background-attachment: fixed;
+}
+
+header h1{
+	font-size: 83px;
+}
+
+header .line{
+	background-color: rgba(255,255,255,0.5);
+	width: 750px;
+	height: 4px;
+	margin: 30px 0;
+}
+
+header p{
+	line-height: 1.6;
+	font-size: 22px;
+	margin: 3px 0;
+	font-family: montserrat-reg;
+}
+
+.btn{
+	border: none;
+	padding: 15px 30px;
+	font-weight: bold;
+	letter-spacing: 1.8px;
+}
+
+.btn-transparent{
+	color: white;
+	border: 2px solid white;
+	background-color: transparent;
+}
+
+header img{
+	height: 90px;
+}
+
+header .navbar{
+	display: flex;
+	align-items: center;
+}
+
+header > .container, header > .container .row{
+	height: 100%;
+}
+
+header .content{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+header button{
+	margin-top: 30px;
+}
+
+section > div{
+	padding: 100px 0;
+}
+
+.body1{
+	background-color: #F8F8F8;
+	text-align: center;
+}
+
+.body1 .icon{
+	border-radius: 100%;
+	border: 2px solid #C2E6E9;
+	width: 50%;
+	padding-top: 50%;
+	position: relative;
+	margin: auto;
+	color: #F96021;
+}
+
+.body1 i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 30px;
+}
+
+.body1 .icon:hover{
+	background-color: #C2E6E9;
+	color: white;
+}
+
+.body1 h4{
+	color: #303030;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.body1 p{
+	color: #818181;
+	font-family: montserrat-reg;
+	letter-spacing: 0.8px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+.body3{
+	display: flex;
+	padding: 0;
+}
+
+.body3 > div{
+	padding: 0;
+}
+
+.body3 > div:nth-child(1) > div{background-image: url('image/magazine.jpg')}
+.body3 > div:nth-child(2) > div{background-image: url('image/vintage.jpg')}
+.body3 > div:nth-child(3) > div{background-image: url('image/clothes.jpg')}
+
+.body3 > div > div > div{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	height: 100%;
+	position: relative;
+	opacity: 0;
+}
+
+.body3 .content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.body3 > div{
+	height: 350px;
+	overflow: hidden;
+}
+
+.body3 button{
+	padding: 9px 17px;
+	margin-top: 30px;
+}
+
+.body3 .line{
+	height: 3px;
+	width: 100px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 10px auto;
+}
+
+.body3 p{
+	font-family: montserrat-reg;
+}
+
+.body3 > div:hover > div{
+	transform: scale(1.2);
+}
+
+.body3 > div:hover > div > div{
+	opacity: 1;
+}
+
+.body3 > div > div{
+	height: 100%;
+}
+
+.body4{
+	background-image: url('image/bridge_back_blur.jpg');
+	color: white;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.body4 p{
+	font-family: montserrat-reg;
+	font-size: 14px;
+	line-height: 1.9;
+}
+
+.body4 .line{
+	height: 3px;
+	width: 200px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 23px auto;
+}
+
+.body4 h1{
+	font-size: 30px;
+}
+
+.body4 .col-lg-6{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.body5{
+	background-color: #3F4756;
+	color: white;
+	padding: 50px 0;
+}
+
+.body5 .row > div{
+	display: flex;
+	align-items: center;
+}
+
+.body5 p{
+	font-family: montserrat-reg;
+}
+
+.body5 button{
+	border-color: rgba(255,255,255,0.4);
+}
+
+.body6{
+	background-color: #F8F8F8;
+}
+
+.body6 h3{
+	color: #303030;
+	margin-bottom: 20px;
+}
+
+.body6 p{
+	font-family: montserrat-reg;
+	font-size: 14px;
+	color: #818181;
+	line-height: 1.8;
+}
+
+.body6 .icon{
+	border-radius: 100%;
+	border: 2px solid #C2E6E9;
+	width: 110%;
+	padding-top: 110%;
+	position: relative;
+	margin: auto;
+	color: #F96021;
+}
+
+.body6 i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+}
+
+.body6 .icon:hover{
+	background-color: #C2E6E9;
+	color: white;
+}
+
+.body6 > div > div > div{
+	margin: 23px 0;
+}
+
+.body7{
+	background-image: url('image/bridge_back_blur.jpg');
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
+}
+
+.body7 .line{
+	height: 3px;
+	width: 60px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 10px auto 20px auto;
+}
+
+.body7 h1{
+	font-size: 80px;
+}
+
+.body8{
+	background-color: #57424B;
+	text-align: center;
+	color: white;
+	padding: 60px 0;
+}
+
+.body8 p{
+	font-family: montserrat-reg;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.body9{
+	text-align: center;
+}
+
+.body9 h1{
+	font-size: 30px;
+}
+
+.body9 .line{
+	height: 3px;
+	width: 170px;
+	background-color: rgba(0,0,0,0.2);
+	margin: 15px auto 30px auto;
+}
+
+.body9{
+	background-color: #F8F8F8;
+}
+
+.body9 .row .row > div > div{
+	height: 200px;
+}
+
+.body9 .row .row > div{
+	padding: 1px 1px;
+	filter: opacity(30%);
+}
+
+.body9 .row .row > div:hover{
+	filter: opacity(100%);
+}
+
+.body9 .row .row:nth-of-type(2) > div:nth-child(1) > div {background-image: url('image/client/c1.jpg')}
+.body9 .row .row:nth-of-type(2) > div:nth-child(2) > div {background-image: url('image/client/c2.jpg')}
+.body9 .row .row:nth-of-type(2) > div:nth-child(3) > div {background-image: url('image/client/c3.jpg')}
+.body9 .row .row:nth-of-type(2) > div:nth-child(4) > div {background-image: url('image/client/c4.jpg')}
+
+.body9 .row .row:nth-of-type(3) > div:nth-child(1) > div {background-image: url('image/client/c4.jpg')}
+.body9 .row .row:nth-of-type(3) > div:nth-child(2) > div {background-image: url('image/client/c3.jpg')}
+.body9 .row .row:nth-of-type(3) > div:nth-child(3) > div {background-image: url('image/client/c2.jpg')}
+.body9 .row .row:nth-of-type(3) > div:nth-child(4) > div {background-image: url('image/client/c1.jpg')}
+
+.body9 p{
+	font-size: 14px;
+	color: #949494;
+	font-family: montserrat-reg;
+	margin-bottom: 40px;
+}
+
+.footer1{
+	background-color: #1D222C;
+}
+
+.footer1 .logo{
+	height: 83px;
+	margin-bottom: -20px;
+}
+
+.footer1 .logo + ul li{
+	margin: 8px 0;
+}
+
+.footer1 h3{
+	color: white;
+	font-size: 17px;
+	margin-top: 30px;
+	letter-spacing: 0.5px;
+	margin-bottom: 25px;
+}
+
+.footer1 ul{
+	list-style: none;
+}
+
+.footer1 li{
+	color: #818181;
+	margin: 24px 0;
+	font-family: montserrat-reg;
+	font-size: 14px;
+}
+
+.footer1 p{
+	font-family: montserrat-reg;
+	color: rgb(175,175,175);
+	margin-top: 10px;
+}
+
+.footer1 a{
+	font-family: montserrat-reg;
+	color: rgb(150,150,150);
+}
+
+.footer1{
+	padding: 40px 0;
+}
+
+.contact li{
+	display: inline-block;
+	margin: 0 9px;
+}
+
+.stream .row > div{
+	padding: 5px;
+}
+
+.stream .image{
+	height: 80px;
+}
+
+.stream > .row:nth-of-type(1) > div:nth-child(1) .image{background-image: url(image/stream/p1.jpg);}
+.stream > .row:nth-of-type(1) > div:nth-child(2) .image{background-image: url(image/stream/p2.jpg);}
+.stream > .row:nth-of-type(1) > div:nth-child(3) .image{background-image: url(image/stream/p3.jpg);}
+.stream > .row:nth-of-type(2) > div:nth-child(1) .image{background-image: url(image/stream/p4.jpg);}
+.stream > .row:nth-of-type(2) > div:nth-child(2) .image{background-image: url(image/stream/p5.jpg);}
+.stream > .row:nth-of-type(2) > div:nth-child(3) .image{background-image: url(image/stream/p6.jpg);}
+
+.footer2{
+	background-color: #0F1218;
+	color: rgb(150,150,150);
+	padding: 30px 0;
+}
+
+.footer2 p{
+	font-family: montserrat-reg;
+	text-align: center;
+	font-size: 14px;
+}
