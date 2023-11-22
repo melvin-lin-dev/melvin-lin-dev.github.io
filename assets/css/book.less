@@ -32,6 +32,15 @@ body{
 			font-size: 14px;
 			transition: .4s transform;
 
+			ul {
+				list-style-type: circle;
+				padding-left: 20px;
+
+				li:not(:first-child) {
+					margin-top: 8px;
+				}
+			}
+
 			&:before{
 				content: '';
 				display: block;
