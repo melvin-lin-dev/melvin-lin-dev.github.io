@@ -2,7 +2,7 @@
 
 body{
 	overflow:hidden;
-	background-color:@gray-extra-light-color;
+	background-color: @gray-light-color;
 	margin:0;
 	padding:0;
 
@@ -11,6 +11,7 @@ body{
 		top: 0;
 		right: 0;
 		margin: 20px;
+		z-index: 50;
 		
 		i {
 			font-size: 24px;
@@ -472,7 +473,7 @@ body{
 
 .thumbnails{
 	position:absolute;
-	bottom:0;
+	bottom:50px;
 	left:50%;
 	transform: translateX(-50%);
 	z-index:1;
@@ -484,17 +485,7 @@ body{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 10px;
-		-webkit-transform:scale3d(0.5, 0.5, 1);
-		-moz-transform:scale3d(0.5, 0.5, 1);
-		-o-transform:scale3d(0.5, 0.5, 1);
-		-ms-transform:scale3d(0.5, 0.5, 1);
-		transform:scale3d(0.5, 0.5, 1);
-		-webkit-transition:-webkit-transform ease-in-out 100ms;
-		-moz-transition:-moz-transform ease-in-out 100ms;
-		-ms-transition:-ms-transform ease-in-out 100ms;
-		-o-transition:-o-transform ease-in-out 100ms;
-		transition:transform ease-in-out 100ms;
+		gap: 6px;
 
 		li{
 			position: relative;
@@ -507,12 +498,12 @@ body{
 			transition:-webkit-transform 60ms;
 
 			.thumbnail{
-				width: 250px;
-				height: 150px;
+				width: 125px;
+				height: 75px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				border-radius: 20px;
+				border-radius: 12px;
 				overflow: hidden;
 				background-color: white;
 				-webkit-box-shadow:0 0 10px #ccc;
@@ -523,7 +514,7 @@ body{
 				cursor: pointer;
 
 				i{
-					font-size: 80px;
+					font-size: 40px;
 				}
 
 				&.front-cover{
@@ -539,7 +530,7 @@ body{
 				}
 				
 				&.back-cover{
-					font-size: 35px;
+					font-size: 18px;
 					font-weight: bold;
 				}
 			}
@@ -548,13 +539,12 @@ body{
 				display:none;
 				text-transform: capitalize;
 				position:absolute;
-				bottom:-30px;
+				bottom:-34px;
 				left:0;
 				z-index:2;
 				width:100%;
 				height:30px;
-				font:bold 18px arial;
-				line-height:30px;
+				font:bold 10px arial;
 				color:#666;
 			}
 
@@ -578,8 +568,8 @@ body{
 				z-index: 10;
 
 				.thumbnail{
-					width: calc(250px * 1.4);
-					height: calc(150px * 1.4);
+					width: calc(125px * 1.4);
+					height: calc(75px * 1.4);
 					-webkit-box-shadow:0 0 12px #666;
 					-moz-box-shadow:0 0 12px #666;
 					-ms-box-shadow:0 0 12px #666;
@@ -587,14 +577,14 @@ body{
 					box-shadow:0 0 12px #666;
 
 					i{
-						font-size: 96px;
+						font-size: 60px;
 					}
 				}
 
 				span{
 					display: block;
-					font-size: 28px !important;
-					bottom: -40px !important;
+					font-size: 16px !important;
+					bottom: -36px !important;
 				}
 
 				.back-cover{
