@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+}
+
+.owl-carousel {
+    height: 100vh;
+    /*overflow: hidden;*/
+}
+
+.owl-stage-outer, .owl-stage, .owl-item {
+    height: 100%;
+}
+
+.owl-stage-outer {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/background.jpg');
+}
+
+/* Owl Nav */
+
+.owl-theme .owl-nav {
+    margin: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 50px;
+    margin: 0;
+    color: white !important;
+    transition: .4s background-color;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.owl-theme .owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-theme .owl-nav .owl-next {
+    right: 0;
+}
+
+.owl-nav i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/* Owl Dots */
+
+.owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-carousel button.owl-dot {
+    margin: 0 5px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 5px;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* Owl Item */
+
+.owl-item {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Own Class */
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /*text-align: center;*/
+}
+
+/* Intro */
+
+.intro {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.intro h1 {
+    font-size: 80px;
+}
+
+.intro h2 {
+    margin-top: 5px;
+    margin-bottom: 140px;
+    font-size: 40px;
+}
+
+.intro h3 {
+    font-size: 30px;
+}
+
+/* APD (Alat Pelindungan Diri) */
+
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header .line {
+    height: 3px;
+    background-color: white;
+    width: 50px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.apd {
+    color: white;
+}
+
+.apd .row {
+    padding: 10px 0;
+}
+
+.apd img {
+    height: 90px;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+    margin: auto;
+}
+
+
+.apd h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.apd p {
+    color: rgb(200, 200, 200);
+}
+
+/* Social Distancing */
+
+.social-distancing li {
+    font-size: 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+/* Public Area */
+
+.public-area li {
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Waste Handling */
+
+
+.waste-handling .row {
+    align-items: center;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.waste-handling img {
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.waste-handling p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Patient Item */
+
+.patient-item li {
+    margin-top: 20px;
+}
+
+/* Question */
+
+.question .content-container button {
+    border-radius: 100px;
+    background-color: white;
+    padding: 7px 15px;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+    transition: .4s all;
+    font-size: 23px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.question button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.form-container form > div:not(:first-child) {
+    margin-top: 20px;
+}
+
+.form-container label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input:not([type=checkbox]):not([type=radio]), .form-container textarea {
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px 15px;
+}
+
+.form-container {
+    position: fixed;
+    left: 0;
+    top: 100%;
+    /*top: 0;*/
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .4s all;
+    z-index: 80;
+}
+
+.form-container.active {
+    top: 0;
+}
+
+.form-container > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.form-container form {
+    padding-right: 20px;
+    max-height: 550px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.form-container input, .form-container textarea {
+    border: 1px solid #ccc;
+}
+
+.form-container ul {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.form-container li {
+    margin-bottom: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    border-radius: 100px;
+    padding: 7px 15px;
+    background-color: rgb(50, 160, 200);
+    border: 1px solid rgb(50, 160, 200);
+    color: white;
+    transition: .4s all;
+    font-size: 23px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: white;
+    color: rgb(50, 160, 200);
+}
+
+/* Assessment */
+
+.assessment {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.assessment > div {
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    width: 500px;
+}
+
+.assessment h1 {
+    font-size: 30px;
+}
+
+.assessment h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.assessment p.result {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.assessment.success p.result {
+    color: rgb(50, 200, 50);
+    font-size: 50px;
+}
+
+.assessment.failed {
+    display: none;
+}
+
+.assessment.failed p.result {
+    color: rgb(240, 90, 90);
+    font-size: 30px;
+}

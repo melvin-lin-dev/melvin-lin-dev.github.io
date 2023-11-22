@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: montserrat, serif;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+html, body, .container {
+    margin: auto;
+}
+
+/*.main-container{*/
+/*    width: 1280px;*/
+/*}*/
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: center;
+}
+
+.row > div {
+    padding: 0 15px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.col-1 {
+    flex: 1 1 8.333%;
+    max-width: 8.333%
+}
+
+.col-2 {
+    flex: 1 1 16.333%;
+    max-width: 16.333%
+}
+
+.col-3 {
+    flex: 1 1 25%;
+    max-width: 25%
+}
+
+.col-4 {
+    flex: 1 1 33.333%;
+    max-width: 33.333%
+}
+
+.col-5 {
+    flex: 1 1 41.333%;
+    max-width: 41.333%
+}
+
+.col-6 {
+    flex: 1 1 50%;
+    max-width: 50%
+}
+
+.col-7 {
+    flex: 1 1 58.333%;
+    max-width: 58.333%
+}
+
+.col-8 {
+    flex: 1 1 66.667%;
+    max-width: 66.667%
+}
+
+.col-9 {
+    flex: 1 1 75%;
+    max-width: 75%
+}
+
+.col-10 {
+    flex: 1 1 83.333%;
+    max-width: 83.333%
+}
+
+.col-11 {
+    flex: 1 1 91.667%;
+    max-width: 91.667%
+}
+
+.col-12 {
+    flex: 1 1 100%;
+    max-width: 100%
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}

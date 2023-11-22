@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="auth-container">
+    <div class="content">
+        <form action="" method="POST">
+            <h1>Login to continue</h1>
+
+            <label for="username-email">
+                <span class="title">Username or Email</span>
+                <input type="text" id="username-email" name="username-email">
+                <span class="effect"></span>
+            </label>
+
+            <label for="password" class="password">
+                <span class="title">Password</span>
+                <input type="password" id="password" name="password">
+                <span class="effect"></span>
+                <i class="far fa-eye" onclick="togglePassword(this)"></i>
+            </label>
+
+            <button class="btn btn-auth btn-rounded">REGISTER</button>
+        </form>
+
+        <div class="extra-content">
+            <a href="">Forgot Password?</a>
+            <p>Don't have account? <a href="../register">Sign Up</a></p>
+
+            <i class="fas fa-arrow-circle-left"></i>
+        </div>
+    </div>
+    <div class="background"></div>
+</div>
+
+<div class="social-media">
+    <a href="">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+</body>
+</html>

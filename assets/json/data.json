@@ -98,5 +98,35 @@
                 "skills": "TypeScript · SASS · Angular · Tailwind CSS"
             }
         ]
+    },
+    "designs": {
+        "class": "fa-solid fa-pen-nib",
+        "data": [
+            {
+                "name": "Auth",
+                "link": "./designs/auth/login",
+                "desc": "Desktop Only · Login & Register Design"
+            },
+            {
+                "name": "COVID-19",
+                "link": "./designs/covid-19",
+                "desc": "Desktop Only · COVID Theme · Slideshow"
+            },
+            {
+                "name": "Phone",
+                "link": "./designs/phone",
+                "desc": "Desktop Only · Hero Design"
+            },
+            {
+                "name": "School",
+                "link": "./designs/school",
+                "desc": "Responsive · School Theme"
+            },
+            {
+                "name": "Wedding",
+                "link": "./designs/wedding",
+                "desc": "Desktop Only · Wedding Theme"
+            }
+        ]
     }
 }

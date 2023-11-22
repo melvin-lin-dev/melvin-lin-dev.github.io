@@ -1,0 +1,163 @@
+.auth-container {
+    display: flex;
+}
+
+.auth-container .content {
+    width: 500px;
+    padding: 40px 50px;
+    min-height: 100vh;
+}
+
+.auth-container .background {
+    background-image: url('../images/bg-01.jpg');
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-container form > label {
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 10px 25px;
+    position: relative;
+    display: block;
+}
+
+.auth-container form .password i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #aaa;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.auth-container form .effect, .auth-container form .effect:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition-duration: .4s;
+    transition-property: border-color, transform;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.auth-container form .effect:after {
+    content: '';
+    transform: scale(1.15, 1.4);
+}
+
+.auth-container form .effect {
+    border-color: #ddd;
+    z-index: -1;
+}
+
+.auth-container input:focus + .effect:after {
+    transform: scale(1);
+    border-color: #6675df;
+}
+
+.auth-container h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.auth-container span.title {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.auth-container input {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-auth {
+    background-color: rgb(67, 130, 244);
+    border: 1px solid rgb(67, 130, 244);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-auth:hover {
+    background-color: rgb(50, 110, 210);
+}
+
+.auth-container .extra-content {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+
+.auth-container .extra-content > a {
+    color: #aaa;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.auth-container .extra-content > i {
+    color: rgb(67, 130, 244);
+    cursor: pointer;
+    transition: .4s color;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.auth-container .extra-content > i:hover {
+    color: rgb(50, 100, 210);
+}
+
+.auth-container .extra-content p a {
+    color: rgb(100, 80, 240);
+}
+
+.social-media {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px 30px;
+}
+
+.social-media a {
+    border-radius: 50%;
+    padding: 30px;
+    color: white;
+    transition: .4s opacity;
+    opacity: .7;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.social-media a:hover {
+    opacity: 1;
+}
+
+.social-media i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.social-media a:nth-child(1) {
+    background-image: linear-gradient(45deg, rgb(232, 114, 58), rgb(203, 34, 104));
+}
+
+.social-media a:nth-child(2) {
+    background-color: rgb(67, 130, 244);
+}
+
+.social-media a:nth-child(3) {
+    background-color: rgb(37, 211, 102);
+}

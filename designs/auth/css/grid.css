@@ -1,0 +1,428 @@
+* {
+    font-family: arial, serif;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, .container {
+    margin: auto;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.row > div {
+    padding: 0 15px;
+    transition: .4s max-width;
+}
+
+section .row > div, footer .row > div {
+    margin-top: 30px;
+}
+
+.col-1 {
+    flex: 1 1 8.333%;
+    max-width: 8.333%
+}
+
+.col-2 {
+    flex: 1 1 16.667%;
+    max-width: 16.667%
+}
+
+.col-3 {
+    flex: 1 1 25%;
+    max-width: 25%
+}
+
+.col-4 {
+    flex: 1 1 33.333%;
+    max-width: 33.333%
+}
+
+.col-5 {
+    flex: 1 1 41.667%;
+    max-width: 41.667%
+}
+
+.col-6 {
+    flex: 1 1 50%;
+    max-width: 50%
+}
+
+.col-7 {
+    flex: 1 1 58.333%;
+    max-width: 58.333%
+}
+
+.col-8 {
+    flex: 1 1 66.667%;
+    max-width: 66.667%
+}
+
+.col-9 {
+    flex: 1 1 75%;
+    max-width: 75%
+}
+
+.col-10 {
+    flex: 1 1 83.333%;
+    max-width: 83.333%
+}
+
+.col-11 {
+    flex: 1 1 91.667%;
+    max-width: 91.667%
+}
+
+.col-12 {
+    flex: 1 1 100%;
+    max-width: 100%
+}
+
+@media screen and (min-width: 576px) {
+    .col-sm-1 {
+        flex: 1 1 8.333%;
+        max-width: 8.333%
+    }
+
+    .col-sm-2 {
+        flex: 1 1 16.667%;
+        max-width: 16.667%
+    }
+
+    .col-sm-3 {
+        flex: 1 1 25%;
+        max-width: 25%
+    }
+
+    .col-sm-4 {
+        flex: 1 1 33.333%;
+        max-width: 33.333%
+    }
+
+    .col-sm-5 {
+        flex: 1 1 41.667%;
+        max-width: 41.667%
+    }
+
+    .col-sm-6 {
+        flex: 1 1 50%;
+        max-width: 50%
+    }
+
+    .col-sm-7 {
+        flex: 1 1 58.333%;
+        max-width: 58.333%
+    }
+
+    .col-sm-8 {
+        flex: 1 1 66.667%;
+        max-width: 66.667%
+    }
+
+    .col-sm-9 {
+        flex: 1 1 75%;
+        max-width: 75%
+    }
+
+    .col-sm-10 {
+        flex: 1 1 83.333%;
+        max-width: 83.333%
+    }
+
+    .col-sm-11 {
+        flex: 1 1 91.667%;
+        max-width: 91.667%
+    }
+
+    .col-sm-12 {
+        flex: 1 1 100%;
+        max-width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-1 {
+        flex: 1 1 8.333%;
+        max-width: 8.333%
+    }
+
+    .col-md-2 {
+        flex: 1 1 16.667%;
+        max-width: 16.667%
+    }
+
+    .col-md-3 {
+        flex: 1 1 25%;
+        max-width: 25%
+    }
+
+    .col-md-4 {
+        flex: 1 1 33.333%;
+        max-width: 33.333%
+    }
+
+    .col-md-5 {
+        flex: 1 1 41.667%;
+        max-width: 41.667%
+    }
+
+    .col-md-6 {
+        flex: 1 1 50%;
+        max-width: 50%
+    }
+
+    .col-md-7 {
+        flex: 1 1 58.333%;
+        max-width: 58.333%
+    }
+
+    .col-md-8 {
+        flex: 1 1 66.667%;
+        max-width: 66.667%
+    }
+
+    .col-md-9 {
+        flex: 1 1 75%;
+        max-width: 75%
+    }
+
+    .col-md-10 {
+        flex: 1 1 83.333%;
+        max-width: 83.333%
+    }
+
+    .col-md-11 {
+        flex: 1 1 91.667%;
+        max-width: 91.667%
+    }
+
+    .col-md-12 {
+        flex: 1 1 100%;
+        max-width: 100%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-1 {
+        flex: 1 1 8.333%;
+        max-width: 8.333%
+    }
+
+    .col-lg-2 {
+        flex: 1 1 16.667%;
+        max-width: 16.667%
+    }
+
+    .col-lg-3 {
+        flex: 1 1 25%;
+        max-width: 25%
+    }
+
+    .col-lg-4 {
+        flex: 1 1 33.333%;
+        max-width: 33.333%
+    }
+
+    .col-lg-5 {
+        flex: 1 1 41.667%;
+        max-width: 41.667%
+    }
+
+    .col-lg-6 {
+        flex: 1 1 50%;
+        max-width: 50%
+    }
+
+    .col-lg-7 {
+        flex: 1 1 58.333%;
+        max-width: 58.333%
+    }
+
+    .col-lg-8 {
+        flex: 1 1 66.667%;
+        max-width: 66.667%
+    }
+
+    .col-lg-9 {
+        flex: 1 1 75%;
+        max-width: 75%
+    }
+
+    .col-lg-10 {
+        flex: 1 1 83.333%;
+        max-width: 83.333%
+    }
+
+    .col-lg-11 {
+        flex: 1 1 91.667%;
+        max-width: 91.667%
+    }
+
+    .col-lg-12 {
+        flex: 1 1 100%;
+        max-width: 100%
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-xl-1 {
+        flex: 1 1 8.333%;
+        max-width: 8.333%
+    }
+
+    .col-xl-2 {
+        flex: 1 1 16.667%;
+        max-width: 16.667%
+    }
+
+    .col-xl-3 {
+        flex: 1 1 25%;
+        max-width: 25%
+    }
+
+    .col-xl-4 {
+        flex: 1 1 33.333%;
+        max-width: 33.333%
+    }
+
+    .col-xl-5 {
+        flex: 1 1 41.667%;
+        max-width: 41.667%
+    }
+
+    .col-xl-6 {
+        flex: 1 1 50%;
+        max-width: 50%
+    }
+
+    .col-xl-7 {
+        flex: 1 1 58.333%;
+        max-width: 58.333%
+    }
+
+    .col-xl-8 {
+        flex: 1 1 66.667%;
+        max-width: 66.667%
+    }
+
+    .col-xl-9 {
+        flex: 1 1 75%;
+        max-width: 75%
+    }
+
+    .col-xl-10 {
+        flex: 1 1 83.333%;
+        max-width: 83.333%
+    }
+
+    .col-xl-11 {
+        flex: 1 1 91.667%;
+        max-width: 91.667%
+    }
+
+    .col-xl-12 {
+        flex: 1 1 100%;
+        max-width: 100%
+    }
+}
+
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .4s background-color;
+    font-weight: bold;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-full-rounded {
+    border-radius: 100px;
+}
+
+.btn-primary {
+    background-color: rgb(120, 115, 235);
+    border: 1px solid rgb(120, 115, 235);
+    color: white;
+}
+
+.btn-primary:hover {
+    /*background-color: white;*/
+    /*color: rgb(120, 115, 235);*/
+    background-color: rgb(90, 85, 210);
+}
+
+.btn-secondary {
+    background-color: rgb(140, 195, 75);
+    border: 1px solid rgb(140, 195, 75);
+    color: white;
+}
+
+.btn-secondary:hover {
+    /*background-color: white;*/
+    /*color: rgb(140, 195, 75);*/
+    background-color: rgb(120, 165, 55);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-group button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
