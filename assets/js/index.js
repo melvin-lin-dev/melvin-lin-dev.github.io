@@ -77,7 +77,8 @@ function loadApp() {
                       <button class="content" onclick="navigateTo(this, '${data.link}')">
                         <div>
                           <div>${data.name}</div>
-                          ${data.desc ? `<div>${data.desc}</div>` : ""}
+                          ${data.desc ? `<div class="desc">${data.desc}</div>` : ""}
+                          ${data.skills ? `<div class="skills"><b>Skills:</b> ${data.skills}</div>` : ""}
                         </div>
                         <i class="fa-solid fa-chevron-right"></i>
                       </button>
@@ -88,7 +89,7 @@ function loadApp() {
                 }
 
                 let el = $(`
-                  <div class="content-container">
+                  <div class="content-container ${key}">
                       <div class="title">${key}</div>
                       <div class="list">
                         ${html}

@@ -1,0 +1,19 @@
+*{
+    margin: auto;
+}
+
+body{
+    overflow: hidden;
+}
+
+.main-container {
+    background-color: black;
+}
+
+.main-container > div{
+    border: 2px solid;
+}
+
+canvas{
+    background-color: black;
+}

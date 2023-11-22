@@ -84,6 +84,19 @@
     },
     "applications": {
         "class": "fa-brands fa-uncharted",
-        "data": []
+        "data": [
+            {
+                "name": "SatuMarket | Full-stack Web Developer",
+                "link": "https://www.satumarket.com/",
+                "desc": "PT. Satu Aplikasi Untuk Semua",
+                "skills": "Vue.js · Bootstrap · Laravel"
+            },
+            {
+                "name": "Kemnaker | Frontend Web Developer",
+                "link": "https://www.kemnaker.go.id/",
+                "desc": "PT. Ammana Fintek Syariah",
+                "skills": "TypeScript · SASS · Angular · Tailwind CSS"
+            }
+        ]
     }
 }

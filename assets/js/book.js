@@ -72,7 +72,8 @@ function navigateTo(el, link){
 	if(!$(".book .content-container .content.clicked").hasClass("clicked")){
 		$(el).addClass('clicked');
 		setTimeout(() => {
-			location.href = link;
+			window.open(link);
+			$(el).removeClass('clicked');
 		}, 650);
 	}
 }
