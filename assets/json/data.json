@@ -96,6 +96,12 @@
                 "link": "https://www.kemnaker.go.id/",
                 "desc": "PT. Ammana Fintek Syariah",
                 "skills": "TypeScript · SASS · Angular · Tailwind CSS"
+            },
+            {
+                "name": "Draft Service",
+                "link": "./applications/draft-service",
+                "desc": "-",
+                "skills": "HTML · CSS · JavaScript"
             }
         ]
     },

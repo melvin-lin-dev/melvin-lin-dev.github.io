@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/window.js" defer></script>
+    <script src="js/saveLoad.js" defer></script>
+    <script src="js/helper.js" defer></script>
+    <script src="js/event.js" defer></script>
+
+    <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+
+<div class="btn btn-mode" onclick="changeMode(this)">Presentation Mode</div>
+<div class="line-container"></div>
+<div class="main-container"></div>
+<div class="edit-container">
+    <div>
+        <span class="close" onclick="closeEdit()">&times;</span>
+        <textarea name="" id="content" cols="30" rows="10"></textarea>
+        <script>
+            let ckContent = CKEDITOR.replace('content');
+        </script>
+        <div class="relations"></div>
+    </div>
+</div>
+<div class="presentation-container">
+    <div class="fs-buttons">
+        <button class="btn" onclick="changeFontSize(-1)" tabindex="7">A-</button>
+        <button class="btn" onclick="changeFontSize(1)" tabindex="8">A+</button>
+    </div>
+    <div class="presentation-content"></div>
+</div>
+<div class="action-container">
+    <button class="del" onclick="action('x')" tabindex="5">X</button>
+    <button class="edit" onclick="action('e')" tabindex="6">E</button>
+</div>
+
+</body>
+</html>
