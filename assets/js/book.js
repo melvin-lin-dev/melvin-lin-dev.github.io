@@ -30,7 +30,7 @@ function loadHTML(fileName, page, pageElement){
 			pageElement.find('.loader').remove();
 
 			$(`
-				<li>
+				<li class="${page % 2 === 0 ? 'left-page' : ''}">
 					<div class="thumbnail page-${page} ${fileName}">${page === $('.book').turn('pages') ? 'The End' : ''}</div>
 					<span>${fileName.replace('-', ' ')}</span>
 				</li>

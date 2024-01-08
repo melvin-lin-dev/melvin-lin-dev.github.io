@@ -97,9 +97,9 @@ function loadApp() {
                   </div>
                 `);
                 $(el).appendTo(element);
-                
+
                 $(`
-                  <li>
+                  <li class="${CURRENT_PAGE % 2 === 0 ? 'left-page' : ''}">
                       <div class="thumbnail page-${CURRENT_PAGE}">
                           <i class="${res[key].class}"></i>
                       </div>
