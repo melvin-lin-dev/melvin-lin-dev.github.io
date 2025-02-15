@@ -147,16 +147,23 @@ section.hero {
     }
 
     .activity-container{
-        position: absolute;
-        top: 80%;
+        position: fixed;
+        top: 42%;
         right: 20px;
         width: 300px;
         box-shadow: 0 2px 5px @gray-light-color;
         z-index: 10;
         border-radius: 12px;
+        background-color: white;
+
+        @media @xl{
+            position: relative;
+            margin-left: auto;
+            top: 100px;
+        }
 
         @media @lg{
-            top: 75%;
+            top: 0;
         }
 
         @media @xs{
@@ -312,7 +319,11 @@ section.about {
                 position: relative;
                 overflow: hidden;
 
-                @media @md {
+                @media @lg {
+                    clip-path: inset(10% 10% 10% 10% round 30px); /* Rounded rectangle */
+                }
+
+                @media @md{
                     aspect-ratio: 4 / 3;
                     clip-path: circle(35% at calc(50% - 10px) 50%);
                 }
@@ -331,6 +342,14 @@ section.about {
                 &:hover {
                     transition-delay: 0s;
                     clip-path: circle(100%);
+
+                    @media @lg {
+                        clip-path: inset(0 round 10px);
+                    }
+
+                    @media @md {
+                        clip-path: circle(100%);
+                    }
 
                     &:after {
                         transition-delay: .3s;

@@ -20,7 +20,7 @@ class Enemy {
     }
 
     shoot() {
-        this.bullets.push(new Bullet(this.x + this.w, this.y + this.h / 2, -1));
+        this.bullets.push(new Bullet(this.x, this.y + this.h / 2, -1));
     }
 
     draw() {

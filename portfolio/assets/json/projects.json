@@ -1,5 +1,16 @@
 [
     {
+        "image": "e-shia.png",
+        "position": "Software Engineer",
+        "company": "E-Shia Digital Solution",
+        "about": "Inventory, Accounting, POS, & Custom Applications",
+        "employmentType": "Full-time",
+        "url": "",
+        "startYear": "2024",
+        "endYear": "Present",
+        "duration": "1 Year"
+    },
+    {
         "image": "kemnaker.png",
         "position": "Frontend Web Developer",
         "company": "PT. Pandawa Teknologi Nusantara",

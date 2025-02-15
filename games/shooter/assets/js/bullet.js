@@ -16,12 +16,10 @@ class Bullet {
 
     draw() {
         ctx.save();
-        ctx.beginPath();
 
         ctx.fillStyle = 'yellow';
         ctx.fillRect(this.x, this.y, this.w, this.h);
 
-        ctx.closePath();
-        ctx.beginPath();
+        ctx.restore();
     }
 }

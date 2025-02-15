@@ -3,12 +3,13 @@
         "HTML",
         "CSS/LESS/SASS",
         "JavaScript/jQuery",
+        "TypeScript",
         "PHP",
-        "TypeScript"
+        "Python",
+        "Flutter"
     ],
     "tools": [
-        "WebStorm",
-        "PhpStorm",
+        "VS Code",
         "GitHub",
         "Figma",
         "Adobe Photoshop"
