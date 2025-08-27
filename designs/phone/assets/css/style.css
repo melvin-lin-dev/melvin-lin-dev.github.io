@@ -3,7 +3,9 @@
     font-family: arial;
 }
 
-html, body, .container {
+html,
+body,
+.container {
     margin: auto;
 }
 
@@ -24,62 +26,62 @@ html, body, .container {
 
 .col-1 {
     flex: 1 1 8.333%;
-    max-width: 8.333%
+    max-width: 8.333%;
 }
 
 .col-2 {
     flex: 1 1 16.667%;
-    max-width: 16.667%
+    max-width: 16.667%;
 }
 
 .col-3 {
     flex: 1 1 25%;
-    max-width: 25%
+    max-width: 25%;
 }
 
 .col-4 {
     flex: 1 1 33.333%;
-    max-width: 33.333%
+    max-width: 33.333%;
 }
 
 .col-5 {
     flex: 1 1 41.667%;
-    max-width: 41.667%
+    max-width: 41.667%;
 }
 
 .col-6 {
     flex: 1 1 50%;
-    max-width: 50%
+    max-width: 50%;
 }
 
 .col-7 {
     flex: 1 1 58.333%;
-    max-width: 58.333%
+    max-width: 58.333%;
 }
 
 .col-8 {
     flex: 1 1 66.667%;
-    max-width: 66.667%
+    max-width: 66.667%;
 }
 
 .col-9 {
     flex: 1 1 75%;
-    max-width: 75%
+    max-width: 75%;
 }
 
 .col-10 {
     flex: 1 1 83.333%;
-    max-width: 83.333%
+    max-width: 83.333%;
 }
 
 .col-11 {
     flex: 1 1 91.667%;
-    max-width: 91.667%
+    max-width: 91.667%;
 }
 
 .col-12 {
     flex: 1 1 100%;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .align-items-center {
@@ -118,9 +120,19 @@ nav img {
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, white 20%, rgb(207, 98, 250) 20%, rgb(49, 157, 220));
+    background-image: linear-gradient(to right, rgb(207, 98, 250) 20%, rgb(49, 157, 220));
     position: relative;
     overflow: hidden;
+}
+
+header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-color: white;
 }
 
 /* Phone Animation */
@@ -132,7 +144,6 @@ header {
 .animation > img {
     position: absolute;
     top: 50%;
-    left: 270px;
     transform: translateY(-50%);
     width: 170px;
     z-index: 1;
@@ -218,7 +229,8 @@ header {
     margin-left: -450px;
 }
 
-.animation h3, .animation p {
+.animation h3,
+.animation p {
     margin: 0;
 }
 
@@ -234,20 +246,21 @@ header {
 .features {
     position: relative;
     color: white;
-}
-
-.features > div {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .features img {
     display: block;
-    width: 10px;
+    width: 20px;
     cursor: pointer;
     margin: 10px auto;
+    transition: .4s filter;
+}
+
+.features img:hover{
+    filter: brightness(85%)
 }
 
 .features p {
@@ -258,3 +271,6 @@ header {
     transform: rotate(180deg);
 }
 
+.features span {
+    font-size: 20px;
+}

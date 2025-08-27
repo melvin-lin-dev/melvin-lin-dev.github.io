@@ -109,6 +109,11 @@
         "class": "fa-solid fa-pen-nib",
         "data": [
             {
+                "name": "ArenaRing",
+                "link": "./designs/arena-ring",
+                "desc": "Responsive · Game Website Design"
+            },
+            {
                 "name": "Auth",
                 "link": "./designs/auth/login",
                 "desc": "Desktop Only · Login & Register Design"
