@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArenaRing</title>
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout-responsive.css">
+    <link rel="stylesheet" href="css/pages/auth.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="col-9 menu-container">
+                <label for="responsive-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="responsive-menu">
+                <div class="menu">
+                    <label for="responsive-menu"><i class="fas fa-angle-double-right"></i></label>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <ul class="main-menu">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="screenshot.html">SCREENSHOTS</a></li>
+                                <li><a href="event.html">EVENTS</a></li>
+                                <li class="dropdown active">
+                                    <span>GAME <i class="fas fa-sort-up"></i></span>
+                                    <ul>
+                                        <li class="active"><a href="character.html">CHARACTERS</a></li>
+                                        <li><a href="map.html">MAPS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 play-now">
+                            <a href="register.html" class="btn btn-primary-medium">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div class="auth">
+        <div class="container">
+            <div class="header">
+                <h2>CREATE AN ACCOUNT</h2>
+            </div>
+
+            <form action="" method="POST" name="register_form" autocomplete="off">
+                <div>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <p id="error-name"></p>
+                </div>
+                <div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <p id="error-email"></p>
+                </div>
+                <div>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder=" ">
+                        <label for="password">Password</label>
+                    </div>
+                    <p id="error-password"></p>
+                </div>
+                <div class="gender-container">
+                    <label>Gender</label>
+                    <div>
+                        <div>
+                            <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                        </div>
+                        <div>
+                            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                        </div>
+                    </div>
+                    <p id="error-gender"></p>
+                </div>
+                <div class="agreement-container">
+                    <div>
+                        <input type="checkbox" id="agreement" name="agreement" value="true">
+                        <label for="agreement">
+                            <span class="off"></span>
+                            <span class="on"></span>
+                        </label>
+                        <p>By creating an account, i agree to the terms of the <a href="">ArenaRing Agreement</a> and the
+                            <a href="">ArenaRing Policy</a></p>
+                    </div>
+                    <p id="error-agreement"></p>
+                </div>
+
+                <button class="btn btn-primary-medium btn-hover">Play Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="alert" id="alert">
+        <p></p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 available-on">
+                    <p>Available On:</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/app-store.png" alt="App Store Image">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/play-store.png" alt="Play Store Image">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/windows.png" alt="Windows Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-4 col-xl-5 text-right">
+                    <div class="back-to-top">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-3">
+                            <ul>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-3">
+                            <ul>
+                                <li><a href="">Game Modes</a></li>
+                                <li><a href="character.html">Characters</a></li>
+                                <li><a href="map.html">Maps</a></li>
+                                <li><a href="">Features</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="images/everyone.jpeg" alt="(E) Everyone Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <div class="copyright">
+                        <img src="images/logo.png" alt="Logo">
+                        <p>&copy; 2021 ArenaRing. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-right">
+                    <ul class="social-media">
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://discord.com"><i class="fab fa-discord"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+:root {
+    --span-width: 220px;
+    --span-height: 45px;
+    --span-cut-width: calc(var(--span-width) - 45px);
+    --span-cut-height: calc(var(--span-height) / 2);
+}
+
+section .map .list {
+    position: relative;
+    height: 550px;
+    z-index: 1;
+}
+
+section .map .content-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .7s clip-path .5s;
+}
+
+section .map .content-container:nth-child(1) {
+    clip-path: polygon(0 0, var(--span-width) 0, var(--span-cut-width) var(--span-height), 0 var(--span-height));
+}
+
+section .map .content-container:nth-child(2) {
+    clip-path: polygon(0 calc(25% - var(--span-cut-height)), var(--span-cut-width) calc(25% - var(--span-cut-height)), var(--span-width) 25%, var(--span-cut-width) calc(25% + var(--span-cut-height)), 0 calc(25% + var(--span-cut-height)));
+}
+
+section .map .content-container:nth-child(3) {
+    clip-path: polygon(0 calc(50% - var(--span-cut-height)), var(--span-cut-width) calc(50% - var(--span-cut-height)), var(--span-width) 50%, var(--span-cut-width) calc(50% + var(--span-cut-height)), 0 calc(50% + var(--span-cut-height)));
+}
+
+section .map .content-container:nth-child(4) {
+    clip-path: polygon(0 calc(75% - var(--span-cut-height)), var(--span-cut-width) calc(75% - var(--span-cut-height)), var(--span-width) 75%, var(--span-cut-width) calc(75% + var(--span-cut-height)), 0 calc(75% + var(--span-cut-height)));
+}
+
+section .map .content-container:nth-child(5) {
+    clip-path: polygon(0 calc(100% - var(--span-height)), var(--span-cut-width) calc(100% - var(--span-height)), var(--span-width) 100%, 0 100%);
+}
+
+section .map .content-container.previous-active {
+    z-index: 1;
+}
+
+section .map .content-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 2;
+}
+
+section .map .content-container:nth-child(n + 2):nth-last-child(n + 2).active {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+}
+
+section .map .content-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section .map .content-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 25px;
+    width: var(--span-width);
+    height: var(--span-height);
+    display: flex;
+    align-items: center;
+    transition: .4s background-color;
+}
+
+section .map .content-container:nth-child(1) span {
+    top: 0;
+    clip-path: polygon(0 0, var(--span-width) 0, var(--span-cut-width) var(--span-height), 0 var(--span-height));
+}
+
+section .map .content-container:nth-child(2) span {
+    top: 25%;
+}
+
+section .map .content-container:nth-child(3) span {
+    top: 50%;
+}
+
+section .map .content-container:nth-child(4) span {
+    top: 75%;
+}
+
+section .map .content-container:nth-child(5) span {
+    top: 100%;
+    clip-path: polygon(0 0, var(--span-cut-width) 0, var(--span-width) var(--span-height), 0 var(--span-height));
+    transform: translateY(-100%);
+}
+
+section .map .content-container:nth-child(n + 2):nth-last-child(n + 2) span {
+    clip-path: polygon(0 0, var(--span-cut-width) 0, var(--span-width) calc(var(--span-cut-height)), var(--span-cut-width) var(--span-height), 0 var(--span-height));
+    transform: translateY(-50%);
+}
+
+section .map .content-container.active span {
+    background-color: rgba(50, 150, 220, .8);
+}

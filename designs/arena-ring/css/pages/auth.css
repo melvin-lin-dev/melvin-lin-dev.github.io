@@ -1,0 +1,282 @@
+section .auth {
+    background-image: linear-gradient(to right, rgba(240, 240, 240, .95) 60%, rgba(240, 240, 240, .3)), url('../../images/login-wallpaper.jpg');
+    background-size: cover;
+    background-position: center right;
+}
+
+section .auth .header {
+    margin-bottom: 40px;
+}
+
+section .auth form {
+    width: 50%;
+}
+
+section .auth form > div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section .auth .input-container {
+    position: relative;
+}
+
+section .auth form input[type="text"],
+section .auth form input[type="email"],
+section .auth form input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: .4s border-color;
+}
+
+section .auth form input[type="text"]:focus,
+section .auth form input[type="email"]:focus,
+section .auth form input[type="password"]:focus {
+    border-color: var(--primary-medium-color);
+}
+
+section .auth form input[type="text"] + label,
+section .auth form input[type="email"] + label,
+section .auth form input[type="password"] + label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 2px 7px;
+    font-size: 10px;
+    color: white;
+    background-color: var(--primary-medium-color);
+    transform: translateY(-50%);
+    transition-duration: .4s;
+    transition-property: top, left, background-color, color, padding, font-size;
+    border-radius: 100px;
+}
+
+section .auth form input:placeholder-shown + label {
+    top: 50%;
+    left: 20px;
+    padding: 2px 0;
+    font-size: 13px;
+    color: rgb(150, 150, 150);
+    background-color: white;
+}
+
+section .auth form input:focus + label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 2px 7px;
+    font-size: 10px;
+    color: white;
+    background-color: var(--primary-medium-color);
+}
+
+section .auth form .gender-container > label {
+    color: var(--primary-medium-color);
+}
+
+section .auth form .gender-container > div {
+    display: flex;
+    margin-top: 10px;
+}
+
+section .auth form .gender-container > div > div:last-child input {
+    margin-left: 20px;
+}
+
+section .auth p {
+    display: inline-block;
+}
+
+section .auth .agreement-container > div {
+    display: flex;
+    align-items: center;
+}
+
+section .auth .agreement-container input {
+    display: none;
+}
+
+section .auth .agreement-container label {
+    position: relative;
+    display: inline-block;
+    border-radius: 100px;
+    height: 31px;
+    min-width: 65px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--primary-medium-color);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+section .auth .agreement-container input:checked + label {
+    background-color: white;
+}
+
+section .auth .agreement-container label span {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    margin: 0 16px;
+    background-color: white;
+}
+
+section .auth .agreement-container label span.off {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+section .auth .agreement-container label span.on {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+section .auth .agreement-container input + label span.off {
+    background-color: var(--primary-medium-color);
+}
+
+section .auth .agreement-container input + label span.on {
+    background-color: white;
+}
+
+section .auth .agreement-container input:checked + label span.off,
+section .auth .agreement-container input + label span.on {
+    padding: 100px;
+    animation: 1s offAnimation;
+}
+
+section .auth .agreement-container input + label span.off,
+section .auth .agreement-container input:checked + label span.on {
+    padding: 9px;
+    z-index: 1;
+    animation: .8s onAnimation;
+}
+
+@keyframes offAnimation {
+    0% {
+        padding: 9px;
+    }
+    100% {
+        padding: 100px;
+    }
+}
+
+@keyframes onAnimation {
+    0%, 50% {
+        padding: 0;
+    }
+    100% {
+        padding: 9px;
+    }
+}
+
+section .auth .agreement-container > div p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+section .auth form p[id*="error"] {
+    color: rgb(220, 80, 75);
+    margin-top: 5px;
+    font-size: 13.5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s max-height;
+}
+
+section .auth form p[id*="error"].display {
+    max-height: 30px;
+}
+
+section .auth button {
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Alert */
+
+.alert {
+    position: fixed;
+    bottom: -100px;
+    right: 0;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    border: 4px solid;
+    border-radius: 7px;
+    opacity: 0;
+    transition-duration: .4s;
+    transition-property: opacity, bottom;
+}
+
+.alert.active {
+    opacity: 1;
+    bottom: 0;
+}
+
+.alert-success {
+    color: rgb(60, 160, 30);
+    border-color: rgb(60, 160, 30);
+    background-color: rgb(220, 240, 220);
+}
+
+.alert-error {
+    color: rgb(210, 100, 100);
+    border-color: rgb(210, 100, 100);
+    background-color: rgb(240, 220, 220);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1350px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    section .auth {
+        background-image: linear-gradient(to right, rgba(240, 240, 240, .95) 80%, rgba(240, 240, 240, .3)), url('../../images/login-wallpaper.jpg');
+    }
+
+    section .auth form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section .auth {
+        background-image: linear-gradient(to right, rgba(240, 240, 240, .95) 100%, rgba(240, 240, 240, .3)), url('../../images/login-wallpaper.jpg');
+    }
+
+    section .auth form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section .auth button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section .auth .agreement-container > div {
+        display: initial;
+    }
+
+    section .auth .agreement-container > div p {
+        margin-top: 5px;
+    }
+
+    section .auth button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+/* Fade In */
+
+.fade-in {
+    opacity: 0;
+    transition-duration: .3s;
+    transition-property: opacity;
+}
+
+header.active .fade-in,
+section > div.active .fade-in {
+    opacity: 1;
+}
+
+[class*="fade-in-"] {
+    position: relative;
+    opacity: 0;
+    transition-duration: .3s;
+    transition-property: opacity, left, right, top;
+}
+
+header.active [class*="fade-in-"],
+section > div.active [class*="fade-in-"] {
+    opacity: 1;
+}
+
+.fade-in-left {
+    left: -150px;
+}
+
+.fade-in-right {
+    right: -150px;
+}
+
+.fade-in-top {
+    top: -150px;
+}
+
+header.active .fade-in-left,
+section > div.active .fade-in-left {
+    left: 0;
+}
+
+header.active .fade-in-right,
+section > div.active .fade-in-right {
+    right: 0;
+}
+
+header.active .fade-in-top,
+section > div.active .fade-in-top {
+    top: 0;
+}

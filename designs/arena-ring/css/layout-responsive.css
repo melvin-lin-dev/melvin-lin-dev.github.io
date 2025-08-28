@@ -1,0 +1,330 @@
+nav .menu-container > label {
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    transition-duration: .4s;
+    transition-property: background-color, color;
+    padding: 3px 14px;
+}
+
+nav .menu-container .menu label {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 20px;
+    z-index: 2;
+}
+
+nav .menu-container .menu label i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav .menu-container label:hover {
+    background-color: var(--primary-medium-color);
+    color: white;
+}
+
+nav .menu-container label, nav .menu-container input {
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 1150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1024px;
+    }
+
+    header.main .content-container {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 730px;
+    }
+
+    nav {
+        padding: 15px 0;
+        position: relative;
+    }
+
+    nav .menu-container {
+        text-align: right;
+    }
+
+    nav .menu-container label {
+        display: inline-block;
+    }
+
+    nav .menu-container .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--primary-color);
+        border-left: 3px solid white;
+        z-index: 999;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        transform: translateX(100%);
+        transition: .4s transform;
+    }
+
+    nav .menu-container input:checked + .menu {
+        transform: translateX(0);
+    }
+
+    nav ul.main-menu {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav li a,
+    nav li.dropdown span {
+        padding: 15px 25px;
+    }
+
+    nav li:not(.active) a:before,
+    nav li.dropdown:not(.active):before {
+        width: 0;
+        height: 100%;
+        transition: .2s width;
+    }
+
+    nav li:not(.active) a:after,
+    nav li.dropdown:not(.active):after {
+        width: 5px;
+        height: 0;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: .2s height .2s;
+    }
+
+    nav li:not(.active) a:hover:before,
+    nav li.dropdown:not(.active):hover:before {
+        transition-delay: .2s;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav li:not(.active) a:hover:after,
+    nav li.dropdown:not(.active):hover:after {
+        transition-delay: 0s;
+        width: 5px;
+        height: 100%;
+    }
+
+    nav li.dropdown ul {
+        position: relative;
+        width: 100%;
+        transition: .4s max-height;
+    }
+
+    nav .play-now {
+        text-align: center;
+    }
+
+    nav .btn {
+        margin-top: 50px;
+        width: calc(100% - 50px);
+    }
+
+    header.main:before, header.main:after {
+        height: 60px;
+        margin: -5px -100px;
+    }
+
+    header.main .content-container {
+        height: 52vw;
+    }
+
+    header .content p {
+        font-size: 20px;
+    }
+
+    header .content h1 {
+        font-size: 55px;
+    }
+
+    .footer3 .copyright {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: 100%;
+    }
+
+    header.main:before, header.main:after {
+        height: 40px;
+        margin: -5px -100px;
+    }
+
+    header.main .content-container {
+        height: 70vw;
+    }
+
+    header .content-container:after {
+        width: 160%;
+        height: 80%;
+    }
+
+    header:not(.main) .content-container:after {
+        top: 47%;
+    }
+
+    header:not(.main) i {
+        margin: -20px 0;
+        font-size: 180px;
+    }
+
+    header .content p {
+        font-size: 18px;
+    }
+
+    header .content h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer1 .available-on {
+        order: 2;
+    }
+
+    .footer1 .text-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer1 p, .footer1 .available-on .row {
+        min-width: 100%;
+    }
+
+    .footer1 p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer1 .available-on img {
+        margin-top: 5px;
+    }
+
+    .footer3 .copyright {
+        text-align: center;
+    }
+
+    .footer3 img {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        height: 14vw;
+    }
+
+    .footer3 .social-media {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .footer3 .social-media a {
+        margin: 0 4px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav .menu-container .menu {
+        width: 100%;
+        border-left: none;
+    }
+
+    header.main:before, header.main:after {
+        width: 190px;
+        margin: 0 -100px;
+    }
+
+    header:not(.main):after {
+        transform: rotate(-40deg);
+        right: -50px;
+        bottom: -40px;
+    }
+
+    header.main .content-container {
+        height: 450px;
+    }
+
+    header.main .content-container:after {
+        top: 47%;
+        height: 80%;
+    }
+
+    header:not(.main) .content-container:after {
+        top: 45%;
+        height: 70%;
+    }
+
+    header .content button {
+        padding: 10px 40px;
+    }
+
+    .footer1 .available-on img {
+        width: 60vw;
+    }
+
+    .footer2 img {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav img.logo {
+        height: 15vw;
+    }
+
+    header.main:before, header.main:after {
+        margin: 0 -130px;
+    }
+
+    header.main .content-container:after {
+        width: 200%;
+    }
+
+    header .content h1 {
+        font-size: 35px;
+    }
+
+    header .content p {
+        font-size: 16px;
+    }
+
+    .footer1 .available-on img {
+        width: 100%;
+    }
+
+    .footer1 p {
+        font-size: 20px;
+    }
+}

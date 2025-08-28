@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6, ol, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Agency FB", serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.object-fit {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.btn {
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1;
+    transition-duration: .2s;
+    transition-property: background-color, border, color;
+}
+
+.btn-primary-medium {
+    background-color: var(--primary-medium-color);
+    border: 1px solid var(--primary-medium-color);
+    color: white;
+}
+
+.btn-primary-medium.btn-hover:hover {
+    background-color: white;
+    color: var(--primary-medium-color);
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--primary-medium-color);
+    overflow: hidden;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.btn-white i {
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    z-index: -1;
+    color: rgba(0, 0, 0, .1);
+    font-size: 70px;
+    transition: .4s left;
+}
+
+.btn-white.btn-hover:hover i {
+    left: 55%;
+}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArenaRing</title>
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout-responsive.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="col-9 menu-container">
+                <label for="responsive-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="responsive-menu">
+                <div class="menu">
+                    <label for="responsive-menu"><i class="fas fa-angle-double-right"></i></label>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <ul class="main-menu">
+                                <li class="active"><a href="index.html">HOME</a></li>
+                                <li><a href="screenshot.html">SCREENSHOTS</a></li>
+                                <li><a href="event.html">EVENTS</a></li>
+                                <li class="dropdown">
+                                    <span>GAME <i class="fas fa-sort-up"></i></span>
+                                    <ul>
+                                        <li><a href="character.html">CHARACTERS</a></li>
+                                        <li><a href="map.html">MAPS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 play-now">
+                            <a href="register.html" class="btn btn-primary-medium">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<header class="main">
+    <div class="content-container">
+        <img src="images/banner.png" alt="Screenshot">
+
+        <div class="content">
+            <p class="fade-in-top">Most addicting game in <span class="year-now">-</span></p>
+            <h1 class="fade-in-top">ARENA RING</h1>
+            <button class="btn btn-primary-medium fade-in-top">
+                Play Now
+                <i class="fas fa-play-circle"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4">
+                    <img src="images/characters/femon.png" alt="Femon Character" class="fade-in-left">
+                </div>
+                <div class="col-12 col-sm-7 col-md-8">
+                    <div class="header fade-in-right">
+                        <h2>ArenaRing is a 2D game and 100% free. The game available on mobile and pc.</h2>
+                    </div>
+
+                    <div class="content-container">
+                        <p class="fade-in-right">Each player enters the arena with 3 lives to prove their dominance in battle. As you take damage from your opponents, the force of each hit increases, causing you to be launched farther and making it harder to stay on the stage. Survive the chaos and outlast the rest to claim victory.</p>
+
+                        <button class="btn btn-white btn-hover fade-in-right">
+                            Read More <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-7 col-lg-8">
+                    <div class="header header-white fade-in-left">
+                        <h2>Features</h2>
+                    </div>
+
+                    <div class="content-container">
+                        <ul>
+                            <li>Competitive 1 vs 1</li>
+                            <li>Competitive 2 vs 2</li>
+                            <li>Normal 1 vs 1</li>
+                            <li>Normal 2 vs 2</li>
+                            <li>Normal 4 vs 4</li>
+                            <li>4 to 8 Players Free for All</li>
+                            <li>
+                                <button class="btn btn-white btn-hover fade-in-right">
+                                    Read More <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-4">
+                    <img src="images/characters/berk.png" alt="Berk Character" class="fade-in-right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight-event">
+        <div class="container">
+            <div class="header fade-in-top">
+                <h2>Highlight of ArenaRing Events</h2>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="navigation-container">
+                    <button class="btn btn-primary-medium btn-hover fade-in" id="btn-slide-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-primary-medium btn-hover fade-in" id="btn-slide-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slideshow-content"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 available-on">
+                    <p>Available On:</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/app-store.png" alt="App Store Image">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/play-store.png" alt="Play Store Image">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <img src="images/windows.png" alt="Windows Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-4 col-xl-5 text-right">
+                    <div class="back-to-top">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-3">
+                            <ul>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-3">
+                            <ul>
+                                <li><a href="">Game Modes</a></li>
+                                <li><a href="character.html">Characters</a></li>
+                                <li><a href="map.html">Maps</a></li>
+                                <li><a href="">Features</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="images/everyone.jpeg" alt="(E) Everyone Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <div class="copyright">
+                        <img src="images/logo.png" alt="Logo">
+                        <p>&copy; <span class="year-now"></span> ArenaRing. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-right">
+                    <ul class="social-media">
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://discord.com"><i class="fab fa-discord"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
