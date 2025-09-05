@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Melvin Lin | Collections</title>
-    <link rel="icon" type="image/x-icon" href="./common/images/favicon.ico">
+        <title>Melvin Lin | Collections</title>
+        <link rel="icon" type="image/x-icon" href="./common/images/favicon.ico" />
 
-    <link rel="stylesheet" href="./common/other/fontawesome/css/all.min.css">
-    <link rel="stylesheet/less" href="./common/css/global.less">
-    <link rel="stylesheet/less" href="./assets/css/book.less">
+        <link rel="stylesheet" href="./common/other/fontawesome/css/all.min.css" />
+        <link rel="stylesheet/less" href="./common/css/global.less" />
+        <link rel="stylesheet/less" href="./assets/css/book.less" />
 
-    <script src="./common/js/less.js" defer></script>
-    <script src="./assets/other/turnjs/extras/jquery.min.1.7.js"></script>
-    <script src="./assets/other/turnjs/extras/modernizr.2.5.3.min.js"></script>
-    <script src="./assets/other/turnjs/lib/hash.js"></script>
-    <script src="./assets/js/index.js" defer></script>
-    <script src="./assets/js/book.js" defer></script>
+        <script src="./common/js/less.js" defer></script>
+        <script src="./assets/other/turnjs/extras/jquery.min.1.7.js"></script>
+        <script src="./assets/other/turnjs/extras/modernizr.2.5.3.min.js"></script>
+        <script src="./assets/other/turnjs/lib/hash.js"></script>
+        <script src="./assets/js/index.js" defer></script>
+        <script src="./assets/js/book.js" defer></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ENZ9QE5P7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ENZ9QE5P7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-        gtag('config', 'G-8ENZ9QE5P7');
-    </script>
-</head>
-<body>
-    <div class="information-container">
-        <i class="fa-solid fa-circle-info"></i>
-        <div class="content">
-            <ul>
-                <li>Some of the Collections/Projects can't be upload since GitHub Pages is a static site hosting service.</li>
-                <li>Collections/Projects made during School/College/Competition.</li>
-            </ul>
-        </div>
-    </div>
+            gtag("config", "G-8ENZ9QE5P7");
 
-    <div class="book-viewport">
-        <div class="container">
-            <div class="book">
-                <div ignore="1" class="next-button"></div>
-                <div ignore="1" class="previous-button"></div>
+            document.addEventListener("scroll", () => {
+                gtag("event", "scroll", { page_path: window.location.pathname });
+            });
+            document.addEventListener("click", () => {
+                gtag("event", "click", { page_path: window.location.pathname });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="information-container">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="content">
+                <ul>
+                    <li>Some of the Collections/Projects can't be upload since GitHub Pages is a static site hosting service.</li>
+                    <li>Collections/Projects made during School/College/Competition.</li>
+                </ul>
             </div>
         </div>
-    </div>
-    
-    <div class="thumbnails">
-        <ul></ul>
-    </div>
-</body>
+
+        <div class="book-viewport">
+            <div class="container">
+                <div class="book">
+                    <div ignore="1" class="next-button"></div>
+                    <div ignore="1" class="previous-button"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnails">
+            <ul></ul>
+        </div>
+    </body>
 </html>
